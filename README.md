@@ -18,12 +18,16 @@ Savings tools, YouTube aggregation, and review aggregation are intentionally stu
 
 ## Running it
 
+This project uses [Bun](https://bun.sh) as its package manager and script runner.
+
 ```bash
-npm install            # or pnpm install / bun install
+bun install
 cp .env.example .env.local   # fill in when credentials are ready
-npm run ios            # iOS simulator
-npm run web            # web
+bun ios                # iOS simulator
+bun web                # web
 ```
+
+`bun ios` / `bun web` / `bun start` map to the corresponding Expo CLI scripts. If you don't have Bun yet: `curl -fsSL https://bun.sh/install | bash`.
 
 Without any env vars the app runs in **fallback mode**:
 - No WorkOS → "Continue as guest" button signs you in on-device.
@@ -43,7 +47,7 @@ See `.env.example`. Copy to `.env.local` and fill:
 Once those are in place:
 
 ```bash
-npm run db:push   # apply Drizzle schema to Supabase
+bun db:push   # apply Drizzle schema to Supabase
 ```
 
 ## Project layout

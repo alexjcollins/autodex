@@ -13,3 +13,8 @@ ios/
 android/
 drizzle/*.json
 drizzle/meta/
+
+# Use bun. Other package managers' lockfiles aren't expected.
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
