@@ -7,7 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "autodex",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "cover",
@@ -35,7 +34,6 @@
     "plugins": [
       "expo-router",
       "expo-font",
-      "expo-web-browser",
       [
         "expo-splash-screen",
         {
@@ -43,7 +41,10 @@
           "image": "./assets/images/splash.png",
           "imageWidth": 200
         }
-      ]
+      ],
+      "expo-image",
+      "expo-secure-store",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
